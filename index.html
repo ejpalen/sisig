@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sisig</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+        <a href="#" class="nav-logo"> <img src="images/logo.png" alt="" /></a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#about" class="nav-link active">Home</a>
+              </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">How to Cook</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Nutrition</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+
+
+    <main id="top">
+      <div class="sisig-main">
+        <div class="sisig-main-text">
+          <h1>Pork Sisig</h1>
+          <p>
+            the Filipino street food of chopped pig parts and chicken livers
+            tossed with a spicy and sour dressing.
+          </p>
+        </div>
+        <div class="sisig-main-image">
+          <img src="sisig1.png" alt="" />
+        </div>
+    </div>
+
+        <div class="what-sisig" id="about">
+          <div class="what-sisig-image">
+            <img src="sisig2a.png" alt="" />
+          </div>
+          <div class="what-sisig-text">
+            <h1>So, what exactly is Pork Sisig?</h1>
+            <p>
+              Pork sisig is a popular Filipino dish. It can be considered as a
+              main dish or an appetizer. The composition of this dish is mainly
+              of pig’s parts such as minced pork meat, ears, and face. Chicken
+              liver, onions, and chili peppers are also added. As mentioned,
+              Sisig can also be enjoyed as a main dish and is best eaten a cup
+              of warm white rice on the side. Sisig is synonymous to “pulutan”.
+              It is a term used to describe food pairings with beer or any
+              alcohlic beverage. I like to pair it with either beer or wine.
+            </p>
+          </div>
+        </div>
+
+        <div class="how-cook-title" id="how-to">
+            <h1>How to cook</h1>
+        </div>
+
+        <div class="ingredients">
+            <div class="ingredients-text">
+            <h1>Ingredients</h1>
+
+            <p>2 pounds pig face (snouts, ears, and jowls)
+                <br>
+                1 cup vinegar<br>
+                1/4 cup soy sauce<br>
+                1 head garlic, peeled and crushed<br>
+                1 teaspoon whole peppercorns<br>
+                2 bay leaves<br>
+                1 tablespoon salt<br>
+                water<br>
+                1 large onion, peeled and diced<br>
+                6 Thai chili peppers, stemmed and minced<br>
+                1/2 cup calamansi juice<br>
+                1 tablespoon Liquid seasoning (I used Maggi)<br>
+                1/2 cup liver spread
+                pepper to taste</p>
+            </div>
+            <div class="ingredients-image">
+                <img src="sisig3.png" alt="">
+            </div>
+        </div>
+
+        <div class="instructions">
+            <div class="instructions-image">
+                <img src="sisig4.png" alt="">
+            </div>
+            <div class="instructions-text">
+                <h1>Instructions</h1>
+                <p>
+                    1. In a large pot, combine pig face, vinegar, soy sauce, garlic, peppercorns, bay leaves, about 1 tablespoon salt,  and enough water to completely cover pork. 
+                    <br>
+                    2. Bring to a boil, skimming scum that floats on top. Lower heat, cover, and simmer for about 50 minutes to 1 hour or until meat is tender. Remove from heat and drain well, discarding liquid.
+                    <br>
+                    3. Over a hot grill, grill pork for about 7 to 10 minutes on each side or until crisp and slightly charred. Or arrange in a single layer on a baking sheet and broil in a 450 F oven for about 4 to 5 minutes or until nicely charred. 
+                    <br>
+                    4. Remove from heat, allow to cool to touch, and chop meat.
+                    <br>
+                    5. In a large bowl, combine chopped meat, onions, chili peppers, calamansi juice., and liquid seasoning. 
+                    <br>
+                    6. And liver spread and gently stir to combine. Season with salt and pepper to taste.
+                    <br>
+                    7. To serve, transfer to sizzling hot plates. </p>
+            </div>
+        </div>
+<div class="nutrition-wrapper">
+        <div class="nutrition" id="nutrition">
+            <h1>Nutrition</h1>
+            <p>Serving: 6g | Calories: 933kcal | Carbohydrates: 6g | Protein: 33g | Fat: 86g | Saturated Fat: 34g | Cholesterol: 265mg | Sodium: 1052mg | Potassium: 694mg | Fiber: 2g | Sugar: 1g | Vitamin A: 3805IU | Vitamin C: 14.6mg | Calcium: 49mg | Iron: 3.9mg</p>
+        </div>
+    </div>
+
+      </div>
+    </main>
+
+    <footer>
+        <p>© 2021 | Edgar Palen Jr.</p>
+    </footer>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const navLink = document.querySelectorAll(".nav-link");
+
+hamburger.addEventListener("click", mobileMenu);
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+    </script>
+  </body>
+</html>
