@@ -85,6 +85,7 @@ main {
   margin: 50px auto;
   align-items: center;
   justify-content: center;
+  padding-top: 30px;
 }
 
 .sisig-main-text {
@@ -288,6 +289,7 @@ footer {
 
   .what-sisig {
     padding: 40px 0;
+    padding-right: 30px;
   }
 }
 
